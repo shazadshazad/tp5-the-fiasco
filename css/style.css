@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "PinyonScript-Regular";
+    src: url("../fonts/PinyonScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ShadowsIntoLight-Regular";
+    src: url("../fonts/ShadowsIntoLight-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Smooch-Regular";
+    src: url("../fonts/Smooch-Regular.ttf");
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: "ShadowsIntoLight-Regular";
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("/img/eggs.jpg");
+    height: 612px;
+    width: 95%;
+    background-color: antiquewhite;
+    margin: auto;
+    opacity: 0.9;
+}
+
+header .iconNav {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+header .iconNav .icon {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+header .iconNav nav {
+    /* width: 50%; */
+}
+
+header .iconNav nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header .iconNav nav ul li {
+    margin-right: 1rem;
+    padding: 1rem 3px;
+}
+
+header .iconNav nav ul li:last-child {
+    border: solid 1px orange;
+}
+
+header .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+header .text .welcome {
+    font-family: "Smooch-Regular";
+    font-size: 3rem;
+    color: goldenrod;
+    margin: 1rem;
+}
