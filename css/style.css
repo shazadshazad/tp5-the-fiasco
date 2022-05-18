@@ -49,10 +49,6 @@ header .iconNav .icon {
     margin-left: 2rem;
 }
 
-header .iconNav nav {
-    /* width: 50%; */
-}
-
 header .iconNav nav ul {
     list-style: none;
     display: flex;
