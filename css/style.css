@@ -13,25 +13,45 @@
     src: url("../fonts/Smooch-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Parisienne-Regular";
+    src: url("../fonts/Parisienne-Regular.ttf");
+}
+
 body {
     margin: 0 auto;
     background-color: black;
     box-sizing: border-box;
     font-family: "ShadowsIntoLight-Regular";
+    /* background-image: url("/img/1px-img.png"); */
 }
 
 .container {
-    width: 1440px;
+    width: 1800px;
     margin: 0 auto;
 }
 
 header {
-    background-image: url("/img/eggs.jpg");
-    height: 612px;
+    /* background-image: url("/img/eggs.jpg"); */
+    /* height: 612px;
     width: 95%;
     background-color: antiquewhite;
     margin: auto;
-    opacity: 0.9;
+    opacity: 0.9; */
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/img/eggs.jpg");
+
+    /* Set a specific height */
+    height: 827px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* width: 95%;
+    margin: 0 auto; */
 }
 
 header .iconNav {
@@ -39,7 +59,7 @@ header .iconNav {
     color: white;
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 1.3rem;
     /* font-weight: bold; */
 }
 
@@ -77,4 +97,90 @@ header .text .welcome {
     font-size: 3rem;
     color: goldenrod;
     margin: 1rem;
+}
+
+main {
+    color: white;
+}
+
+main .discover {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+main .discover .discoverImgBlock {
+    width: 45%;
+}
+
+main .discover .discoverImgBlock .discoverImg {
+    width: 350px;
+    height: 425px;
+    border: solid 1px sandybrown;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+main .discover .discoverText {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+main .discover .discoverText h2 {
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+
+main .discover .discoverText h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+main .discover .discoverText .lorem {
+    overflow-wrap: break-word;
+}
+
+main .discover .discoverText .seeMore {
+    color: goldenrod;
+}
+
+main .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+/* main .menu .certifiedBio h2 {
+    font-size: 3rem;
+} */
+
+main .menu .certifiedBio h2 {
+    /* font-family: "Smooch-Regular"; */
+    color: goldenrod;
+    font-size: 2rem;
+}
+
+main .menu .certifiedBio h3 {
+    /* font-family: "Smooch-Regular"; */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main .menu .certifiedBio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: lightgray;
+    font-size: 1.2rem;
 }
